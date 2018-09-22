@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>FUNCTION</title>
+		<script type="text/javascript">
+			function calculaArea(largura,comprimento){
+
+			comprimento = parseFloat(comprimento);
+			largura = parseFloat(largura); //Convertendo os tipos caracters lido pelo prompt para ponto flutuante possibilitando o calculo entre essas variáveis
+			var area = largura * comprimento;
+			return area;
+		}
+
+		var largura = prompt("Digite a largura do seu terreno");
+		var comprimento = prompt("Digite o comprimento do seu terreno")
+
+		
+		document.write(" O terreno possui área de "+calculaArea(largura,comprimento) + " m²");
+
+		/* Função sem necessitar do return
+		function calculaArea(largura,comprimento){
+
+			comprimento = parseFloat(comprimento);
+			largura = parseFloat(largura); //Convertendo os tipos caracters lido pelo prompt para ponto flutuante possibilitando o calculo entre essas variáveis
+			var area = largura * comprimento;
+			document.write(" O terreno possui área de "+calculaArea(largura,comprimento) + " m²");
+		}
+
+		var largura = prompt("Digite a largura do seu terreno");
+		var comprimento = prompt("Digite o comprimento do seu terreno")
+
+		
+		
+		*/ 
+
+		
+		</script>
+		
+	</head>
+<body>
+
+</body>
+</html>
