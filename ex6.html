@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>	
+	<title>Exercicio 5</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		/*Imagine que a multiplicação pode ser definida como somas sucessivas, ou seja,  a*b=a+a+...+a,  somados b vezes. Escreva a função function mult( a, b ) que calcula a multiplicação utilizando somas sucessivas.
+
+
+		*/
+		function multi(a,b){
+			var cont = 0;
+			for(var i = 0; i<a;i++){
+				cont = cont + b;
+			}
+			return cont;
+			
+		}
+		
+
+		document.write(multi(5,10));
+
+		
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
