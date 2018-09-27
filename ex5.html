@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>	
+	<title>Exercicio 5</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		/*Crie uma página HTML vinculada a um arquivo JavaScript,  que informa o dia da semana corrente e um cumprimento em função do período do dia, exemplo se for antes do meio-dia a página deve dizer “Bom dia ! Hoje é segunda-feira !“, após ao meio-dia “Boa tarde ! Hoje é segunda-feira !“
+
+		*/
+		var data = new Date();
+		var dia = data.getDay();
+		var hora = data.getHours();
+
+		switch(dia){
+			case 0:
+				document.write('Domingo');
+				break;
+			case 1:
+				document.write('segunda-feira');
+				break;
+			case 2:
+				document.write('Terça');
+				break;
+			case 3:
+				document.write('Quarta');
+				break;
+			case 4:
+				document.write('Quinta');
+				break;
+			case 5:
+				document.write('Sexta');
+				break;
+			case 6:
+				document.write('Sabado');
+				break;
+		}
+
+
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
