@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>	
+	<title>Exercicio 5</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		/*Crie um formulário com os campos para cadastrar o  usuário de um sistema (login, senha e confirmar  senha). Permita que a página seja submetida apenas se  todos os campos estiverem preenchidos, se os campos  senha e confirma senha forem iguais e a senha possuir  entre 6 e 10 caracteres. Apresente mensagens de  alerta.
+*/
+function validaVazio() {
+		var nome = form1.txtnome.value;
+		var senha = form1.senha.value;
+		var cosenha = form1.cosenha.value;
+		if (nome == "") {
+			alert('Preencha o campo com seu nome');
+			form1.txtnome.focus();
+			return false;
+		}if (senha == "" ) {
+			alert('Preencha o campo senha');
+			form1.senha.focus();
+			return false;
+		}
+		if (cosenha == "" || cosenha != senha ) {
+			alert('Preencha o campo confirmar senha corretamente');
+			form1.cosenha.focus();
+			return false;
+		}
+		else{
+		alert("Dados enviados com sucesso");
+		return true;
+	}
+}
+
+		
+</script>
+</head>
+<body>
+	<form name="form1"  method="post" onsubmit="return validaVazio()">
+
+			Nome: <input type="text" name="txtnome" maxlength="10" autofocus>
+	
+	
+			Senha: <input type="password" name="senha" maxlength="10"><br><br>
+
+			Confirmar senha: <input type="password" name="cosenha" maxlength="10">
+
+			<input type="submit" name="submit" value="inserir">
+			
+		</fieldset>
+	</form>
+	
+
+</body>
+</html>
