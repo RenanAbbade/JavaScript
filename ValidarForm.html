@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Exercício 1
+		</title>
+		<script type="text/javascript">
+			/*Ex1*/
+			document.write("Olá! Saudações")
+			/* Ex2 e 3 center*/
+			var nome = "";
+			while (nome == "" || nome == null){
+				nome = prompt("Digite o seu nome");
+			}
+			document.write('<center>'+nome+'</center>' );
+
+			/*Ex 4 */
+			function validaVazio(){
+				var nome = cadastro.nome.value;
+				var email = cadastro.email.value;
+				var estado_civil = cadastro.civil.value;
+				var bens = cadastro.bens.value;
+				var idade = cadastro.faixaidade.value;
+
+				if(nome =="" || nome == null){
+					alert("Preencha seu nome corretamente");
+					cadastro.nome.focus();
+					return false;
+				}if(email=="" || email == null){
+					alert("Preencha seu email corretamente");
+					cadastro.email.focus();
+					return false;
+				}if((cadastro.sexo[0].checked == false) && (cadastro.sexo[1].checked == false)){
+					alert("Informe o sexo");
+					cadastro.sexo[0].focus();
+					return false;
+				}
+				if((cadastro.civil[0].checked == false) && (cadastro.civil[1].checked == false) && (cadastro.civil[2].checked == false)){
+					alert("Informe o estado civil");
+					cadastro.civil[0].focus();
+					return false;
+
+				}if((cadastro.bens[0].checked == false) && (cadastro.bens[1].checked == false) && (cadastro.bens[2].checked == false)){
+					alert("Informe os bens corretamente!");
+					cadastro.bens[0].focus();
+					return false;
+				}else{
+					alert("Dados enviados com sucesso");
+					return true;
+				}
+
+			}
+
+		
+			
+		</script>
+
+	</head>
+
+<body>
+	<header>
+		<p id="user"></p>
+	</header>
+	<form action="file:///C:/Users/Renan/Documents/dom1.html" method="get" name="cadastro" onsubmit="validaVazio()">
+		<p> Por favor, não vote no Bolsonaro, mas preencha os campos pra enviar<br>Muito obrigado!<br><br></p>
+		Nome completo: <input type="text" name="nome" size="35"><br><br>
+		Seu e-mail: <input type="email" name="email" size="35"><br><br>
+		Sexo: <br>
+			<input type="radio" name="sexo" value="f">Feminino<br>
+			<input type="radio" name="sexo" value="m">Masculino<br>
+		Estado civil: <br>
+			<input type="radio" name="civil" value="s">Solteiro<br>
+			<input type="radio" name="civil" value="c">Casado<br>
+			<input type="radio" name="civil" value="e">Poliamor<br>
+		Bens que possui: <br>
+			<input type="checkbox" name="bens" value="c">Casa<br>
+			<input type="checkbox" name="bens" value="a">Automovel<br>
+			<input type="checkbox" name="bens" value="m">Moto<br>
+		Faixa de idade: <select name="faixaidade">
+						<option value="3a10">3 a 10 anos</option>
+						<option value="11a25">11 a 25 anos</option>
+						<option value="26a35">26 a 35 anos</option>
+						<option value="36a55">36 a 55 anos</option>
+						<option value="59a90">56 a 90 anos</option>
+
+				
+					</select><br><br>
+					Obs gerais: <br>
+						<textarea name="obseravacoes" rows="5" cols="60">
+						</textarea><br><br>
+					<input type="submit" name="Enviar">
+					<input type="reset" name="Limpar">
+
+			</form>
+	</body>
+</html>
