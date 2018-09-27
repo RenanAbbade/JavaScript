@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Use the DOM to change my text!</p> 
+
+<script>
+document.getElementById("demo").innerHTML = "Good Job!";// inner html modifica o valor relacionado a ID
+</script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Use the DOM to change my text!</p> 
+
+<script>
+document.getElementsByTagName("p")[0].innerHTML = "Good Job!";
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p class="test">Use the DOM to change my text!</p> 
+
+<script>
+document.getElementsByClassName("test")[0].innerHTML = "Good Job!";
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Use the DOM to change my text!</p> 
+
+<script>
+document.querySelectorAll("p")[0].innerHTML = "Good Job!";
+</script>
+
+</body>
+</html>
